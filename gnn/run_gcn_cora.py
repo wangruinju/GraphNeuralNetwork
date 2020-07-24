@@ -17,7 +17,6 @@ if __name__ == "__main__":
         'cora')
 
     A = preprocess_adj(A)
-
     features /= features.sum(axis=1, ).reshape(-1, 1)
 
     if FEATURE_LESS:
